@@ -137,7 +137,7 @@ h2 {
     color: rgb(41, 37, 37);
 }
 .image-section {
-    width: 40%;
+    min-width: 40%;
 }
 .image-section img{
     width: 150px;
@@ -252,6 +252,13 @@ footer > p {
     }
     .middle-section p {
         margin: 5px 20px;
+    }
+    .image-section {
+        display: flex;
+        justify-content: center;
+    }
+    .image-section img {
+        margin: auto
     }
 }
 
