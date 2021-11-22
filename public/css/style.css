@@ -42,7 +42,8 @@ nav {
     padding: 0px;
 }
 .nav-bar ul li img {
-    transform: scale(0.7);
+    width: 40px;
+    margin: 10px 10px;
 }
 .nav-bar ul li {
     display: flex;
@@ -125,7 +126,7 @@ h2 {
 }
 .middle-section {                      /* MIDDLE */
     display: flex;
-    height: 165px;
+    min-height: 165px;
 }
 .middle-section p {
     margin-bottom: 10px;
@@ -140,7 +141,7 @@ h2 {
 }
 .image-section img{
     width: 150px;
-    height: 150px;
+    min-height: 150px;
     margin-left: 40px;
 }
 .paragraphe-section {
@@ -165,6 +166,7 @@ h2 {
     font-family: 'Ubuntu', sans-serif;
     font-weight: normal;
     margin-top: 10px;
+    text-align: center;
 }
 .bottom-section img {
     width: 60px;
@@ -212,5 +214,44 @@ footer > p {
     margin-bottom: 20px;
 }
 
-
+@media (max-width: 576px) {
+    html, body {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+    .packs {
+        display: flex;
+        margin: auto;
+    }
+    .nav-bar ul li img {
+        width: 30px;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .after-nav {
+        display: flex;
+        flex-direction: column;
+    }
+    .after-nav p, .after-nav h1 {
+        text-align: center;
+    }
+    .middle-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .paragraphe-section {
+        width: auto;
+        margin: 15px 0px;
+    }
+    .middle-section p {
+        margin: 5px 20px;
+    }
+}
 
